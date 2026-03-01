@@ -13,15 +13,22 @@
           type="text"
         />
       </view>
+      <view class="map-container">
+        <web-view 
+          :src="mapUrl" 
+          @message="handleMessage"
+          class="map-view"
+        ></web-view>
+      </view>
       <view class="location-card card">
         <view class="location-header">
           <view class="location-left">
             <text class="location-icon">📍</text>
             <text class="location-label">当前定位</text>
           </view>
-          <text class="location-retry">重新定位</text>
+          <text class="location-retry" @tap="reloadMap">重新定位</text>
         </view>
-        <text class="location-text">上海市 · 浦东新区 · 碧桂园清华园</text>
+        <text class="location-text">{{ currentLocation }}</text>
       </view>
       <view class="community-list">
         <text class="community-section-title">附近的社区</text>
@@ -49,6 +56,8 @@ export default {
   data() {
     return {
       keyword: '',
+      mapUrl: '/static/map.html',
+      currentLocation: '正在定位...',
       communities: [
         { name: '碧桂园清华园', desc: '距离您 230m | 浦东新区张江街12号' },
         { name: '万科锦绣家园', desc: '距离您 850m | 浦东新区绣川路88号' },
@@ -64,6 +73,16 @@ export default {
         if (app.globalData) app.globalData.communityName = item.name
       } catch (e) {}
       uni.switchTab({ url: '/pages/index/index' })
+    },
+    handleMessage(e) {
+      const data = e.detail.data[0]
+      if (data.type === 'location') {
+        this.currentLocation = data.address
+      }
+    },
+    reloadMap() {
+      // 重新加载地图以触发定位
+      this.mapUrl = '/static/map.html?timestamp=' + new Date().getTime()
     }
   }
 }
@@ -167,5 +186,20 @@ export default {
   border-radius: 24rpx;
   padding: 24rpx;
   box-shadow: 0 6rpx 16rpx rgba(0, 0, 0, 0.05);
+}
+.map-container {
+  margin-top: 32rpx;
+  height: 500rpx;
+  border-radius: 24rpx;
+  overflow: hidden;
+  box-shadow: 0 6rpx 16rpx rgba(0, 0, 0, 0.05);
+  position: relative;
+}
+.map-view {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 </style>

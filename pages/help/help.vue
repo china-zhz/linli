@@ -32,7 +32,7 @@
         <text class="help-desc">人不在家，阳台落地窗没关，衣服眼看就要淋湿了，求好心邻居帮个忙！</text>
         <view class="help-footer">
         <view class="user">
-          <image class="user-avatar" src="/static/images/avatar-help.jpg" mode="aspectFill" />
+          <image class="user-avatar" src="../../static/images/avatar-help.jpg" mode="aspectFill" />
           <text class="user-name">陈女士 · 5号楼</text>
         </view>
           <view class="help-btn">立即接单</view>
@@ -52,7 +52,7 @@
         <text class="help-desc">要换客厅灯泡，手能够不着。用完速还，送上一瓶可乐表示感谢！</text>
         <view class="help-footer">
         <view class="user">
-          <image class="user-avatar" src="/static/images/avatar-help.jpg" mode="aspectFill" />
+          <image class="user-avatar" src="../../static/images/avatar-help.jpg" mode="aspectFill" />
           <text class="user-name">赵哥 · 12号楼</text>
         </view>
           <view class="help-btn">联系邻居</view>
@@ -85,7 +85,7 @@
         </view>
         <view class="honor-row">
         <view class="honor-item">
-          <image class="honor-avatar" src="/static/images/avatar-star.jpg" mode="aspectFill" />
+          <image class="honor-avatar" src="../../static/images/avatar-star.jpg" mode="aspectFill" />
           <text class="honor-name">刘大夫</text>
             <text class="honor-meta">接单12次</text>
           </view>
@@ -95,7 +95,7 @@
             <text class="honor-meta">接单9次</text>
           </view>
         <view class="honor-item">
-          <image class="honor-avatar" src="/static/images/avatar-star.jpg" mode="aspectFill" />
+          <image class="honor-avatar" src="../../static/images/avatar-star.jpg" mode="aspectFill" />
           <text class="honor-name">林小姐</text>
             <text class="honor-meta">接单7次</text>
           </view>

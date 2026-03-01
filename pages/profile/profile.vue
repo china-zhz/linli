@@ -3,7 +3,7 @@
     <scroll-view scroll-y class="scroll">
       <view class="user-header">
         <view class="user-row">
-          <image class="user-avatar" src="/static/images/avatar-profile.jpg" mode="aspectFill" />
+          <image class="user-avatar" src="../../static/images/avatar-profile.jpg" mode="aspectFill" />
           <view class="user-info">
             <view class="user-name-row">
               <text class="user-name">王大卫</text>

@@ -30,7 +30,7 @@
         <view class="section-label">邻里发布的动态</view>
         <view v-for="(item, index) in feedList" :key="item.id" class="post card">
           <view class="post-header">
-            <image class="post-avatar" src="/static/images/avatar-user.jpg" mode="aspectFill" />
+            <image class="post-avatar" src="../../static/images/avatar-user.jpg" mode="aspectFill" />
             <view class="post-info">
               <view class="post-name-row">
                 <text class="post-name">{{ item.author }}</text>
@@ -94,7 +94,7 @@
               <text class="banner-button-text">立即报名</text>
             </view>
           </view>
-          <image class="banner-image" src="/static/images/banner-sport.jpg" mode="aspectFill" />
+          <image class="banner-image" src="../../static/images/banner-sport.jpg" mode="aspectFill" />
         </view>
       </block>
     </scroll-view>
@@ -118,7 +118,7 @@ export default {
           tag: '认证业主',
           time: '10分钟前',
           content: '今天在北门草坪发现一只走丢的小萨姆耶，好乖呀。有丢狗的邻居吗？我暂时安顿在物业中心。#失物招领',
-          images: ['/static/images/post-dog1.jpg', '/static/images/post-dog2.jpg'],
+          images: ['../../static/images/post-dog1.jpg', '../../static/images/post-dog2.jpg'],
           likeCount: 24,
           replyCount: 12,
           liked: false,

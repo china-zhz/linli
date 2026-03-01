@@ -19,7 +19,7 @@
     <scroll-view scroll-y class="scroll">
       <view class="grid">
         <view v-for="(item, i) in products" :key="i" class="product card">
-          <image class="product-image" src="/static/images/product.jpg" mode="aspectFill" />
+          <image class="product-image" src="../../static/images/product.jpg" mode="aspectFill" />
           <view class="product-body">
             <text class="product-title">{{ item.title }}</text>
             <view class="product-price-row">
@@ -29,7 +29,7 @@
             </view>
             <view class="product-footer">
               <view class="owner">
-                <image class="owner-avatar" src="/static/images/avatar-seller.jpg" mode="aspectFill" />
+                <image class="owner-avatar" src="../../static/images/avatar-seller.jpg" mode="aspectFill" />
                 <text class="owner-name">{{ item.owner }}</text>
               </view>
               <text class="owner-building">{{ item.building }}</text>

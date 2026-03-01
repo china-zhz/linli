@@ -38,9 +38,10 @@
     <div id="mapContainer"></div>
     <div class="location-btn" onclick="locateMe()">📍</div>
     
-    <!-- 测试用天地图密钥，建议替换为自己的密钥 -->
+    <!-- 天地图API密钥 -->
+    <!-- 注意：这里使用的是测试密钥，实际使用时请替换为自己申请的密钥 -->
     <!-- 天地图密钥申请地址：https://www.tianditu.gov.cn/ -->
-    <script type="text/javascript" src="https://api.tianditu.gov.cn/api?v=4.0&tk=2b3c1a4d5e6f7g8h9i0j"></script>
+    <script type="text/javascript" src="https://api.tianditu.gov.cn/api?v=4.0&tk=96c1d18c2a93441db62d4e09d8465f25"></script>
     <script>
         var map;
         var marker;
@@ -49,6 +50,22 @@
         function initMap() {
             console.log('开始初始化地图');
             try {
+                // 检查T对象是否存在
+                if (typeof T === 'undefined') {
+                    console.error('天地图API加载失败');
+                    alert('天地图API加载失败，请检查网络连接');
+                    // 发送错误信息到uni-app
+                    if (typeof uni !== 'undefined') {
+                        uni.postMessage({
+                            data: {
+                                type: 'error',
+                                message: '天地图API加载失败'
+                            }
+                        });
+                    }
+                    return;
+                }
+                
                 // 初始化地图，设置中心点和缩放级别
                 map = new T.Map('mapContainer');
                 console.log('地图初始化成功');
@@ -69,6 +86,15 @@
             } catch (error) {
                 console.error('地图初始化失败:', error);
                 alert('地图初始化失败，请检查网络连接');
+                // 发送错误信息到uni-app
+                if (typeof uni !== 'undefined') {
+                    uni.postMessage({
+                        data: {
+                            type: 'error',
+                            message: '地图初始化失败: ' + error.message
+                        }
+                    });
+                }
             }
         }
         

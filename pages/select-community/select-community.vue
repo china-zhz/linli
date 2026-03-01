@@ -57,7 +57,7 @@ export default {
     return {
       keyword: '',
       mapUrl: '/static/map.html',
-      currentLocation: '正在定位...',
+      currentLocation: '上海市 · 浦东新区',
       communities: [
         { name: '碧桂园清华园', desc: '距离您 230m | 浦东新区张江街12号' },
         { name: '万科锦绣家园', desc: '距离您 850m | 浦东新区绣川路88号' },
@@ -65,6 +65,12 @@ export default {
         { name: '静安府东区', desc: '距离您 2.5km | 静安区汶水路' }
       ]
     }
+  },
+  mounted() {
+    // 页面加载后延迟加载地图，确保uni对象可用
+    setTimeout(() => {
+      this.mapUrl = '/static/map.html?timestamp=' + new Date().getTime();
+    }, 500);
   },
   methods: {
     goIndex(item) {
@@ -78,6 +84,12 @@ export default {
       const data = e.detail.data[0]
       if (data.type === 'location') {
         this.currentLocation = data.address
+      } else if (data.type === 'error') {
+        console.error('地图错误:', data.message)
+        uni.showToast({
+          title: '地图加载失败，请检查网络连接',
+          icon: 'none'
+        })
       }
     },
     reloadMap() {

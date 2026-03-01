@@ -6,104 +6,97 @@
         <text class="community-arrow">▾</text>
       </view>
       <view class="tab-row">
-        <text class="tab-item tab-item-active">推荐动态</text>
-        <text class="tab-item">社区公告</text>
-        <text class="tab-item">物业服务</text>
-        <text class="tab-item">投票公示</text>
+        <text
+          class="tab-item"
+          :class="{ 'tab-item-active': currentTab === 'feed' }"
+          @tap="currentTab = 'feed'"
+        >邻里动态</text>
+        <text
+          class="tab-item"
+          :class="{ 'tab-item-active': currentTab === 'service' }"
+          @tap="currentTab = 'service'"
+        >物业服务</text>
+        <text
+          class="tab-item"
+          :class="{ 'tab-item-active': currentTab === 'activity' }"
+          @tap="currentTab = 'activity'"
+        >邻里活动</text>
       </view>
     </view>
 
     <scroll-view scroll-y class="scroll">
-      <view class="banner card">
-        <view class="banner-text">
-          <text class="banner-title">2026年邻里春季运动会</text>
-          <text class="banner-subtitle">报名进行中 · 已有286人参与</text>
-          <view class="banner-button">
-            <text class="banner-button-text">立即报名</text>
-          </view>
-        </view>
-        <view class="banner-image-placeholder">
-          <text class="banner-image-text">活动海报</text>
-        </view>
-      </view>
-
-      <view class="grid card">
-        <view class="grid-item">
-          <view class="grid-icon grid-icon-blue">修</view>
-          <text class="grid-text">物业报修</text>
-        </view>
-        <view class="grid-item">
-          <view class="grid-icon grid-icon-orange">费</view>
-          <text class="grid-text">生活缴费</text>
-        </view>
-        <view class="grid-item">
-          <view class="grid-icon grid-icon-green">访</view>
-          <text class="grid-text">访客预约</text>
-        </view>
-        <view class="grid-item">
-          <view class="grid-icon grid-icon-purple">诉</view>
-          <text class="grid-text">投诉建议</text>
-        </view>
-      </view>
-
-      <view class="post card">
-        <view class="post-header">
-          <view class="post-avatar"></view>
-          <view class="post-info">
-            <view class="post-name-row">
-              <text class="post-name">王大伟</text>
-              <text class="post-tag">认证业主</text>
+      <!-- 邻里动态：仅邻里发布的动态 -->
+      <block v-if="currentTab === 'feed'">
+        <view class="section-label">邻里发布的动态</view>
+        <view v-for="(item, index) in feedList" :key="item.id" class="post card">
+          <view class="post-header">
+            <image class="post-avatar" src="/static/images/avatar-user.jpg" mode="aspectFill" />
+            <view class="post-info">
+              <view class="post-name-row">
+                <text class="post-name">{{ item.author }}</text>
+                <text v-if="item.tag" class="post-tag">{{ item.tag }}</text>
+              </view>
+              <text class="post-time">{{ item.time }}</text>
             </view>
-            <text class="post-time">10分钟前</text>
           </view>
-        </view>
-        <text class="post-content">
-          今天在北门草坪发现一只走丢的小萨姆耶，好乖呀。有丢狗的邻居吗？我暂时安顿在物业中心。#失物招领
-        </text>
-        <view class="post-images">
-          <view class="post-image"></view>
-          <view class="post-image"></view>
-        </view>
-        <view class="post-actions">
-          <view class="post-action">
-            <text class="post-action-icon">👍</text>
-            <text class="post-action-text">24</text>
+          <text class="post-content" :class="{ 'post-content-link': item.isAsk }">{{ item.content }}</text>
+          <view v-if="item.images && item.images.length" class="post-images">
+            <image
+              v-for="(img, i) in item.images"
+              :key="i"
+              class="post-image"
+              :src="img"
+              mode="aspectFill"
+            />
           </view>
-          <view class="post-action">
-            <text class="post-action-icon">💬</text>
-            <text class="post-action-text">12</text>
-          </view>
-          <view class="post-action">
-            <text class="post-action-icon">↗</text>
-            <text class="post-action-text">分享</text>
-          </view>
-        </view>
-      </view>
-
-      <view class="post card">
-        <view class="post-header">
-          <view class="post-avatar"></view>
-          <view class="post-info">
-            <view class="post-name-row">
-              <text class="post-name">李阿姨</text>
+          <view class="post-actions">
+            <view class="post-action" @tap="onLike(item)">
+              <text class="post-action-icon" :class="{ 'post-action-icon-active': item.liked }">👍</text>
+              <text class="post-action-text" :class="{ 'post-action-active': item.liked }">{{ item.likeCount }}</text>
             </view>
-            <text class="post-time">1小时前</text>
+            <view class="post-action" @tap="onReply(item)">
+              <text class="post-action-icon">💬</text>
+              <text class="post-action-text">{{ item.replyCount }}</text>
+            </view>
           </view>
         </view>
-        <text class="post-content post-content-link">
-          #邻里问问 请问大家，小区附近哪家推拿馆比较正宗？腰椎间盘突出有点老毛病犯了。
-        </text>
-        <view class="post-actions">
-          <view class="post-action">
-            <text class="post-action-icon">👍</text>
-            <text class="post-action-text">8</text>
+      </block>
+
+      <!-- 物业服务 -->
+      <block v-if="currentTab === 'service'">
+        <view class="grid card">
+          <view class="grid-item">
+            <view class="grid-icon grid-icon-blue">修</view>
+            <text class="grid-text">物业报修</text>
           </view>
-          <view class="post-action">
-            <text class="post-action-icon">💬</text>
-            <text class="post-action-text">3</text>
+          <view class="grid-item">
+            <view class="grid-icon grid-icon-orange">费</view>
+            <text class="grid-text">生活缴费</text>
+          </view>
+          <view class="grid-item">
+            <view class="grid-icon grid-icon-green">访</view>
+            <text class="grid-text">访客预约</text>
+          </view>
+          <view class="grid-item">
+            <view class="grid-icon grid-icon-purple">诉</view>
+            <text class="grid-text">投诉建议</text>
           </view>
         </view>
-      </view>
+      </block>
+
+      <!-- 邻里活动 -->
+      <block v-if="currentTab === 'activity'">
+        <view class="banner card">
+          <view class="banner-text">
+            <text class="banner-title">2026年邻里春季运动会</text>
+            <text class="banner-subtitle">报名进行中 · 已有286人参与</text>
+            <view class="banner-button">
+              <text class="banner-button-text">立即报名</text>
+            </view>
+          </view>
+          <image class="banner-image" src="/static/images/banner-sport.jpg" mode="aspectFill" />
+        </view>
+      </block>
     </scroll-view>
 
     <view class="ai-fab">
@@ -116,7 +109,34 @@
 export default {
   data() {
     return {
-      communityName: '碧桂园清华园'
+      communityName: '碧桂园清华园',
+      currentTab: 'feed',
+      feedList: [
+        {
+          id: 1,
+          author: '王大伟',
+          tag: '认证业主',
+          time: '10分钟前',
+          content: '今天在北门草坪发现一只走丢的小萨姆耶，好乖呀。有丢狗的邻居吗？我暂时安顿在物业中心。#失物招领',
+          images: ['/static/images/post-dog1.jpg', '/static/images/post-dog2.jpg'],
+          likeCount: 24,
+          replyCount: 12,
+          liked: false,
+          isAsk: false
+        },
+        {
+          id: 2,
+          author: '李阿姨',
+          tag: '',
+          time: '1小时前',
+          content: '#邻里问问 请问大家，小区附近哪家推拿馆比较正宗？腰椎间盘突出有点老毛病犯了。',
+          images: [],
+          likeCount: 8,
+          replyCount: 3,
+          liked: false,
+          isAsk: true
+        }
+      ]
     }
   },
   onLoad() {
@@ -130,6 +150,16 @@ export default {
   methods: {
     goSelectCommunity() {
       uni.navigateTo({ url: '/pages/select-community/select-community' })
+    },
+    onLike(item) {
+      item.liked = !item.liked
+      item.likeCount += item.liked ? 1 : -1
+    },
+    onReply(item) {
+      uni.showToast({
+        title: '回复功能敬请期待',
+        icon: 'none'
+      })
     }
   }
 }
@@ -226,19 +256,10 @@ export default {
   color: #ffffff;
 }
 
-.banner-image-placeholder {
+.banner-image {
   width: 140rpx;
   height: 140rpx;
   border-radius: 70rpx;
-  background-color: rgba(255, 255, 255, 0.7);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.banner-image-text {
-  font-size: 22rpx;
-  color: #666666;
 }
 
 .grid {
@@ -291,6 +312,13 @@ export default {
   color: #555555;
 }
 
+.section-label {
+  margin-top: 32rpx;
+  margin-bottom: 12rpx;
+  font-size: 24rpx;
+  color: #999999;
+}
+
 .post {
   margin-top: 24rpx;
 }
@@ -305,8 +333,8 @@ export default {
   width: 72rpx;
   height: 72rpx;
   border-radius: 36rpx;
-  background-color: #dddddd;
   margin-right: 16rpx;
+  flex-shrink: 0;
 }
 
 .post-info {
@@ -362,7 +390,6 @@ export default {
   width: 48%;
   height: 160rpx;
   border-radius: 16rpx;
-  background-color: #e5e5e5;
 }
 
 .post-actions {
@@ -387,6 +414,11 @@ export default {
   margin-left: 8rpx;
   font-size: 22rpx;
   color: #888888;
+}
+
+.post-action-active,
+.post-action-icon-active {
+  color: #07c160;
 }
 
 .ai-fab {

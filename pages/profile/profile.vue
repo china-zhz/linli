@@ -3,7 +3,7 @@
     <scroll-view scroll-y class="scroll">
       <view class="user-header">
         <view class="user-row">
-          <view class="user-avatar"></view>
+          <image class="user-avatar" src="/static/images/avatar-profile.jpg" mode="aspectFill" />
           <view class="user-info">
             <view class="user-name-row">
               <text class="user-name">王大卫</text>
@@ -129,9 +129,9 @@ export default {
   width: 120rpx;
   height: 120rpx;
   border-radius: 60rpx;
-  background-color: #ffffff;
   border: 4rpx solid #ffffff;
   box-shadow: 0 8rpx 16rpx rgba(0, 0, 0, 0.06);
+  flex-shrink: 0;
 }
 .user-info {
   margin-left: 24rpx;

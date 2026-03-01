@@ -19,7 +19,7 @@
     <scroll-view scroll-y class="scroll">
       <view class="grid">
         <view v-for="(item, i) in products" :key="i" class="product card">
-          <view class="product-image"></view>
+          <image class="product-image" src="/static/images/product.jpg" mode="aspectFill" />
           <view class="product-body">
             <text class="product-title">{{ item.title }}</text>
             <view class="product-price-row">
@@ -29,7 +29,7 @@
             </view>
             <view class="product-footer">
               <view class="owner">
-                <view class="owner-avatar"></view>
+                <image class="owner-avatar" src="/static/images/avatar-seller.jpg" mode="aspectFill" />
                 <text class="owner-name">{{ item.owner }}</text>
               </view>
               <text class="owner-building">{{ item.building }}</text>
@@ -61,11 +61,14 @@ export default {
 <style scoped>
 .page-market {
   min-height: 100vh;
-  padding: 24rpx 24rpx 40rpx;
+  padding: 24rpx;
+  padding-bottom: 40rpx;
   box-sizing: border-box;
+  background-color: #f8f8f8;
 }
 .scroll {
-  height: 100vh;
+  height: 1100rpx;
+  margin-top: 16rpx;
 }
 .header {
   margin-bottom: 24rpx;
@@ -102,6 +105,8 @@ export default {
 .tag-row {
   margin-top: 24rpx;
   white-space: nowrap;
+  display: flex;
+  flex-direction: row;
 }
 .tag {
   display: inline-block;
@@ -117,29 +122,37 @@ export default {
   color: #ffffff;
 }
 .grid {
-  margin-top: 8rpx;
+  margin-top: 16rpx;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
 .product {
   width: 48%;
-  padding: 0;
-  margin-top: 16rpx;
+  margin-bottom: 24rpx;
+  box-sizing: border-box;
   overflow: hidden;
+}
+.product.card {
+  padding: 0;
+  border-radius: 24rpx;
 }
 .product-image {
   width: 100%;
   height: 220rpx;
-  background-color: #d9f7be;
+  display: block;
+  border-radius: 24rpx 24rpx 0 0;
 }
 .product-body {
-  padding: 16rpx;
+  padding: 20rpx;
 }
 .product-title {
-  font-size: 24rpx;
+  font-size: 26rpx;
   font-weight: 600;
   color: #333333;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .product-price-row {
   margin-top: 8rpx;
@@ -179,8 +192,8 @@ export default {
   width: 32rpx;
   height: 32rpx;
   border-radius: 16rpx;
-  background-color: #dddddd;
   margin-right: 8rpx;
+  flex-shrink: 0;
 }
 .owner-name {
   font-size: 20rpx;

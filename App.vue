@@ -1,5 +1,8 @@
 <script>
 	export default {
+		globalData: {
+			communityName: '碧桂园清华园'
+		},
 		onLaunch: function() {
 			console.log('App Launch')
 		},

@@ -1,17 +1,30 @@
 {
-	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
-		{
-			"path": "pages/index/index",
-			"style": {
-				"navigationBarTitleText": "uni-app"
-			}
-		}
+	"pages": [
+		{"path": "pages/index/index", "style": {"navigationBarTitleText": "邻里广场"}},
+		{"path": "pages/qa/qa", "style": {"navigationBarTitleText": "邻里问问"}},
+		{"path": "pages/help/help", "style": {"navigationBarTitleText": "邻里互助"}},
+		{"path": "pages/market/market", "style": {"navigationBarTitleText": "闲置交易"}},
+		{"path": "pages/profile/profile", "style": {"navigationBarTitleText": "我的"}},
+		{"path": "pages/select-community/select-community", "style": {"navigationBarTitleText": "选择社区"}}
 	],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
-		"navigationBarTitleText": "uni-app",
-		"navigationBarBackgroundColor": "#F8F8F8",
+		"navigationBarTitleText": "邻里社区",
+		"navigationBarBackgroundColor": "#ffffff",
 		"backgroundColor": "#F8F8F8"
+	},
+	"tabBar": {
+		"color": "#999999",
+		"selectedColor": "#07C160",
+		"backgroundColor": "#ffffff",
+		"borderStyle": "black",
+		"list": [
+			{"pagePath": "pages/index/index", "text": "首页", "iconPath": "static/tabbar/home.png", "selectedIconPath": "static/tabbar/home-active.png"},
+			{"pagePath": "pages/qa/qa", "text": "邻里问问", "iconPath": "static/tabbar/qa.png", "selectedIconPath": "static/tabbar/qa-active.png"},
+			{"pagePath": "pages/help/help", "text": "邻里互助", "iconPath": "static/tabbar/help.png", "selectedIconPath": "static/tabbar/help-active.png"},
+			{"pagePath": "pages/market/market", "text": "闲置交易", "iconPath": "static/tabbar/market.png", "selectedIconPath": "static/tabbar/market-active.png"},
+			{"pagePath": "pages/profile/profile", "text": "我的", "iconPath": "static/tabbar/profile.png", "selectedIconPath": "static/tabbar/profile-active.png"}
+		]
 	},
 	"uniIdRouter": {}
 }

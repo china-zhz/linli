@@ -1,0 +1,79 @@
+<view class="page-select">
+  <view class="status-bar">
+    <text class="status-time">9:41</text>
+    <view class="status-right">
+      <text class="status-text">Wi-Fi</text>
+      <text class="status-text">100%</text>
+    </view>
+  </view>
+
+  <view class="content">
+    <view class="welcome">
+      <text class="welcome-title">欢迎来到邻里社区</text>
+    </view>
+
+    <view class="search-box">
+      <input
+        class="search-input"
+        placeholder="搜索您所在的小区"
+        placeholder-class="search-placeholder"
+        type="text"
+      />
+    </view>
+
+    <view class="location-card card">
+      <view class="location-header">
+        <view class="location-left">
+          <text class="location-icon">📍</text>
+          <text class="location-label">当前定位</text>
+        </view>
+        <text class="location-retry">重新定位</text>
+      </view>
+      <text class="location-text">上海市 · 浦东新区 · 碧桂园清华园</text>
+    </view>
+
+    <view class="community-list">
+      <text class="community-section-title">附近的社区</text>
+
+      <view class="community-item card" bindtap="goIndex">
+        <view class="community-main">
+          <view>
+            <text class="community-name">碧桂园清华园</text>
+            <text class="community-desc">距离您 230m | 浦东新区张江街12号</text>
+          </view>
+          <text class="community-arrow">›</text>
+        </view>
+      </view>
+
+      <view class="community-item card" bindtap="goIndex">
+        <view class="community-main">
+          <view>
+            <text class="community-name">万科锦绣家园</text>
+            <text class="community-desc">距离您 850m | 浦东新区绣川路88号</text>
+          </view>
+          <text class="community-arrow">›</text>
+        </view>
+      </view>
+
+      <view class="community-item card" bindtap="goIndex">
+        <view class="community-main">
+          <view>
+            <text class="community-name">融创中心壹号</text>
+            <text class="community-desc">距离您 1.2km | 浦东新区张衡路500号</text>
+          </view>
+          <text class="community-arrow">›</text>
+        </view>
+      </view>
+
+      <view class="community-item card" bindtap="goIndex">
+        <view class="community-main">
+          <view>
+            <text class="community-name">静安府东区</text>
+            <text class="community-desc">距离您 2.5km | 静安区汶水路</text>
+          </view>
+          <text class="community-arrow">›</text>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

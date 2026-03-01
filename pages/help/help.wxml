@@ -1,0 +1,125 @@
+<view class="page-help">
+  <!-- 头部 -->
+  <view class="header card">
+    <view class="header-row">
+      <text class="header-title">邻里互助</text>
+      <view class="points">
+        <text class="points-icon">Ⓟ</text>
+        <text class="points-text">420 积分</text>
+      </view>
+    </view>
+    <view class="switch-row">
+      <view class="switch-btn switch-btn-active">
+        <text class="switch-text switch-text-active">我要求助</text>
+      </view>
+      <view class="switch-btn">
+        <text class="switch-text">我的任务</text>
+      </view>
+    </view>
+  </view>
+
+  <scroll-view scroll-y="true" class="scroll">
+    <!-- 互助卡片 1 -->
+    <view class="help-card card help-card-orange">
+      <view class="help-top">
+        <view class="help-left">
+          <text class="help-badge help-badge-orange">生活紧急</text>
+          <text class="help-title">
+            下雨了，谁能帮 5号楼302室 收个衣服？
+          </text>
+        </view>
+        <view class="help-right">
+          <text class="help-points">+20 积分</text>
+          <text class="help-time">刚刚发布</text>
+        </view>
+      </view>
+      <text class="help-desc">
+        人不在家，阳台落地窗没关，衣服眼看就要淋湿了，求好心邻居帮个忙！
+      </text>
+      <view class="help-footer">
+        <view class="user">
+          <view class="user-avatar"></view>
+          <text class="user-name">陈女士 · 5号楼</text>
+        </view>
+        <view class="help-btn">立即接单</view>
+      </view>
+    </view>
+
+    <!-- 互助卡片 2 -->
+    <view class="help-card card help-card-blue">
+      <view class="help-top">
+        <view class="help-left">
+          <text class="help-badge help-badge-blue">物力协助</text>
+          <text class="help-title">
+            家里梯子坏了，谁家能借个梯子用半天？
+          </text>
+        </view>
+        <view class="help-right">
+          <text class="help-points">+10 积分</text>
+          <text class="help-time">20分钟前</text>
+        </view>
+      </view>
+      <text class="help-desc">
+        要换客厅灯泡，手能够不着。用完速还，送上一瓶可乐表示感谢！
+      </text>
+      <view class="help-footer">
+        <view class="user">
+          <view class="user-avatar"></view>
+          <text class="user-name">赵哥 · 12号楼</text>
+        </view>
+        <view class="help-btn">联系邻居</view>
+      </view>
+    </view>
+
+    <!-- 互助卡片 3 -->
+    <view class="help-card card help-card-green">
+      <view class="help-top">
+        <view class="help-left">
+          <text class="help-badge help-badge-green">专业咨询</text>
+          <text class="help-title">
+            求懂电脑的邻居帮忙清理下风扇灰尘
+          </text>
+        </view>
+        <view class="help-right">
+          <text class="help-points">+50 积分</text>
+          <text class="help-time">1小时前</text>
+        </view>
+      </view>
+      <text class="help-desc">
+        笔记本电脑响声特别大，自己不敢拆。只要清理一下就行，重谢！
+      </text>
+      <view class="help-footer">
+        <view class="user">
+          <view class="user-avatar"></view>
+          <text class="user-name">小周 · 8号楼</text>
+        </view>
+        <view class="help-btn">提供帮助</view>
+      </view>
+    </view>
+
+    <!-- 荣誉榜 -->
+    <view class="honor card">
+      <view class="honor-title-row">
+        <text class="honor-icon">🏅</text>
+        <text class="honor-title">本周邻里之星</text>
+      </view>
+      <view class="honor-row">
+        <view class="honor-item">
+          <view class="honor-avatar"></view>
+          <text class="honor-name">刘大夫</text>
+          <text class="honor-meta">接单12次</text>
+        </view>
+        <view class="honor-item">
+          <view class="honor-avatar"></view>
+          <text class="honor-name">阿强</text>
+          <text class="honor-meta">接单9次</text>
+        </view>
+        <view class="honor-item">
+          <view class="honor-avatar"></view>
+          <text class="honor-name">林小姐</text>
+          <text class="honor-meta">接单7次</text>
+        </view>
+      </view>
+    </view>
+  </scroll-view>
+</view>

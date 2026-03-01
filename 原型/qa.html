@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>邻里问问 - 邻里社区</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="https://code.iconify.design/3/3.1.1/iconify.min.js"></script>
+<style>
+        body { background-color: #F8F8F8; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+        .wechat-container { width: 375px; height: 812px; margin: 20px auto; border: 8px solid #333; border-radius: 40px; position: relative; overflow: hidden; background: #F8F8F8; display: flex; flex-direction: column; }
+        .scroll-area { flex: 1; overflow-y: auto; -ms-overflow-style: none; scrollbar-width: none; }
+        .scroll-area::-webkit-scrollbar { display: none; }
+        .tab-bar { height: 84px; background: white; border-top: 1px solid #EEE; display: flex; justify-content: space-around; padding-top: 10px; padding-bottom: 20px; }
+        .tab-item { display: flex; flex-direction: column; align-items: center; font-size: 10px; color: #999; }
+        .tab-item.active { color: #07C160; }
+        .ask-btn { position: absolute; bottom: 100px; right: 20px; width: 56px; height: 56px; background: #07C160; border-radius: 28px; display: flex; align-items: center; justify-content: center; color: white; box-shadow: 0 4px 12px rgba(7,193,96,0.3); }
+    </style>
+</head>
+<body>
+<div class="wechat-container">
+<!-- 头部 -->
+<div class="pt-12 px-4 pb-4 bg-white border-b">
+<h1 class="text-xl font-bold">邻里问问</h1>
+<div class="mt-4 flex gap-2">
+<div class="flex-1 relative">
+<span class="iconify absolute left-3 top-2.5 text-gray-400" data-icon="ri:search-line"></span>
+<input class="w-full pl-10 pr-4 py-2 bg-gray-100 rounded-full border-none text-sm" placeholder="搜搜大家都在问什么" type="text"/>
+</div>
+</div>
+</div>
+<div class="scroll-area">
+<!-- 分类导航 -->
+<div class="flex justify-between px-6 py-4 bg-white">
+<div class="flex flex-col items-center gap-1 group">
+<div class="w-12 h-12 bg-blue-100 text-blue-500 rounded-xl flex items-center justify-center">
+<span class="iconify text-2xl" data-icon="ri:home-gear-line"></span>
+</div>
+<span class="text-xs font-medium">生活常识</span>
+</div>
+<div class="flex flex-col items-center gap-1">
+<div class="w-12 h-12 bg-pink-100 text-pink-500 rounded-xl flex items-center justify-center">
+<span class="iconify text-2xl" data-icon="ri:restaurant-line"></span>
+</div>
+<span class="text-xs font-medium">周边美食</span>
+</div>
+<div class="flex flex-col items-center gap-1">
+<div class="w-12 h-12 bg-yellow-100 text-yellow-500 rounded-xl flex items-center justify-center">
+<span class="iconify text-2xl" data-icon="ri:book-2-line"></span>
+</div>
+<span class="text-xs font-medium">教育资讯</span>
+</div>
+<div class="flex flex-col items-center gap-1">
+<div class="w-12 h-12 bg-green-100 text-green-500 rounded-xl flex items-center justify-center">
+<span class="iconify text-2xl" data-icon="ri:medicine-bottle-line"></span>
+</div>
+<span class="text-xs font-medium">医疗健康</span>
+</div>
+</div>
+<div class="p-4 space-y-3">
+<h2 class="text-sm font-bold text-gray-500 py-2">热门问答</h2>
+<!-- 问答卡片 1 -->
+<div class="bg-white p-4 rounded-2xl shadow-sm">
+<div class="flex items-start gap-2">
+<span class="bg-orange-500 text-white text-[10px] px-1.5 py-0.5 rounded">热</span>
+<h3 class="font-bold text-sm leading-snug">请问小区附近的“浦东图书馆”周一开馆吗？</h3>
+</div>
+<div class="mt-2 text-gray-600 text-sm line-clamp-2">
+                        王老师回复：周一通常是闭馆日进行内部整理，建议周二至周日前往...
+                    </div>
+<div class="mt-3 flex justify-between items-center text-[10px] text-gray-400">
+<span>32个回复 · 1.2k 浏览</span>
+<span class="bg-gray-100 px-2 py-1 rounded-full">查看详情</span>
+</div>
+</div>
+<!-- 问答卡片 2 -->
+<div class="bg-white p-4 rounded-2xl shadow-sm">
+<div class="flex items-start gap-2">
+<span class="bg-green-500 text-white text-[10px] px-1.5 py-0.5 rounded">新</span>
+<h3 class="font-bold text-sm leading-snug">大家家里的宽带续费都是多少钱一年？感觉我续贵了。</h3>
+</div>
+<div class="mt-2 text-gray-600 text-sm italic">
+                        暂无邻居回复，快来抢沙发吧~
+                    </div>
+<div class="mt-3 flex justify-between items-center text-[10px] text-gray-400">
+<span>0个回复 · 45 浏览</span>
+<span class="bg-gray-100 px-2 py-1 rounded-full">我要回答</span>
+</div>
+</div>
+<!-- 问答卡片 3 -->
+<div class="bg-white p-4 rounded-2xl shadow-sm">
+<div class="flex items-start gap-2">
+<h3 class="font-bold text-sm leading-snug">推荐一个周边好吃的早点摊位，最好是有豆浆油条的那种。</h3>
+</div>
+<div class="mt-2 text-gray-600 text-sm line-clamp-2">
+                        张大爷：东门出口左转200米有个陈记早点，他们家的咸豆浆是一绝，开了十多年了...
+                    </div>
+<div class="mt-3 flex justify-between items-center text-[10px] text-gray-400">
+<span>54个回复 · 890 浏览</span>
+<span class="bg-gray-100 px-2 py-1 rounded-full">查看详情</span>
+</div>
+</div>
+</div>
+</div>
+<!-- 悬浮提问按钮 -->
+<div class="ask-btn">
+<span class="iconify text-3xl" data-icon="ri:add-line"></span>
+</div>
+<!-- 底部导航栏 -->
+<div class="tab-bar">
+<a class="tab-item" href="index.html">
+<span class="iconify text-2xl" data-icon="ri:home-8-line"></span>
+<span>首页</span>
+</a>
+<a class="tab-item active" href="qa.html">
+<span class="iconify text-2xl" data-icon="ri:questionnaire-fill"></span>
+<span>邻里问问</span>
+</a>
+<a class="tab-item" href="help.html">
+<span class="iconify text-2xl" data-icon="ri:heart-3-line"></span>
+<span>邻里互助</span>
+</a>
+<a class="tab-item" href="market.html">
+<span class="iconify text-2xl" data-icon="ri:shopping-bag-3-line"></span>
+<span>闲置交易</span>
+</a>
+<a class="tab-item" href="profile.html">
+<span class="iconify text-2xl" data-icon="ri:user-3-line"></span>
+<span>我的</span>
+</a>
+</div>
+</div>
+</body>
+</html>

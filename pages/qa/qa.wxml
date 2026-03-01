@@ -1,0 +1,94 @@
+<view class="page-qa">
+  <!-- 头部 -->
+  <view class="header card">
+    <text class="header-title">邻里问问</text>
+    <view class="search-row">
+      <input
+        class="search-input"
+        placeholder="搜搜大家都在问什么"
+        placeholder-class="search-placeholder"
+      />
+    </view>
+  </view>
+
+  <scroll-view scroll-y="true" class="scroll">
+    <!-- 分类导航 -->
+    <view class="category card">
+      <view class="category-item">
+        <view class="category-icon category-icon-blue">家</view>
+        <text class="category-text">生活常识</text>
+      </view>
+      <view class="category-item">
+        <view class="category-icon category-icon-pink">吃</view>
+        <text class="category-text">周边美食</text>
+      </view>
+      <view class="category-item">
+        <view class="category-icon category-icon-yellow">教</view>
+        <text class="category-text">教育资讯</text>
+      </view>
+      <view class="category-item">
+        <view class="category-icon category-icon-green">医</view>
+        <text class="category-text">医疗健康</text>
+      </view>
+    </view>
+
+    <view class="section">
+      <text class="section-title">热门问答</text>
+
+      <!-- 问答卡片 1 -->
+      <view class="qa-card card">
+        <view class="qa-title-row">
+          <text class="qa-tag-hot">热</text>
+          <text class="qa-title">
+            请问小区附近的“浦东图书馆”周一开馆吗？
+          </text>
+        </view>
+        <text class="qa-brief">
+          王老师回复：周一通常是闭馆日进行内部整理，建议周二至周日前往...
+        </text>
+        <view class="qa-footer">
+          <text class="qa-meta">32个回复 · 1.2k 浏览</text>
+          <text class="qa-chip">查看详情</text>
+        </view>
+      </view>
+
+      <!-- 问答卡片 2 -->
+      <view class="qa-card card">
+        <view class="qa-title-row">
+          <text class="qa-tag-new">新</text>
+          <text class="qa-title">
+            大家家里的宽带续费都是多少钱一年？感觉我续贵了。
+          </text>
+        </view>
+        <text class="qa-brief qa-brief-empty">
+          暂无邻居回复，快来抢沙发吧~
+        </text>
+        <view class="qa-footer">
+          <text class="qa-meta">0个回复 · 45 浏览</text>
+          <text class="qa-chip">我要回答</text>
+        </view>
+      </view>
+
+      <!-- 问答卡片 3 -->
+      <view class="qa-card card">
+        <view class="qa-title-row">
+          <text class="qa-title">
+            推荐一个周边好吃的早点摊位，最好是有豆浆油条的那种。
+          </text>
+        </view>
+        <text class="qa-brief">
+          张大爷：东门出口左转200米有个陈记早点，他们家的咸豆浆是一绝，开了十多年了...
+        </text>
+        <view class="qa-footer">
+          <text class="qa-meta">54个回复 · 890 浏览</text>
+          <text class="qa-chip">查看详情</text>
+        </view>
+      </view>
+    </view>
+  </scroll-view>
+
+  <!-- 悬浮提问按钮 -->
+  <view class="ask-fab">
+    <text class="ask-fab-icon">＋</text>
+  </view>
+</view>

@@ -1,0 +1,107 @@
+<view class="page-profile">
+  <scroll-view scroll-y="true" class="scroll">
+    <!-- 个人头部 -->
+    <view class="user-header">
+      <view class="user-row">
+        <view class="user-avatar"></view>
+        <view class="user-info">
+          <view class="user-name-row">
+            <text class="user-name">王大卫</text>
+            <text class="user-verified">✓</text>
+          </view>
+          <view class="user-tags-row">
+            <text class="user-tag">碧桂园清华园 · 5号楼</text>
+            <text class="user-tag-primary">荣誉业主</text>
+          </view>
+        </view>
+      </view>
+
+      <view class="stats-row">
+        <view class="stat-item">
+          <text class="stat-value">420</text>
+          <text class="stat-label">互助积分</text>
+        </view>
+        <view class="stat-item">
+          <text class="stat-value">12</text>
+          <text class="stat-label">我的发布</text>
+        </view>
+        <view class="stat-item">
+          <text class="stat-value">5</text>
+          <text class="stat-label">邻里勋章</text>
+        </view>
+      </view>
+    </view>
+
+    <view class="section">
+      <!-- 我的社区 -->
+      <view class="card">
+        <text class="section-title">我的社区</text>
+        <view class="shortcut-grid">
+          <view class="shortcut-item">
+            <view class="shortcut-icon shortcut-icon-orange"></view>
+            <text class="shortcut-text">我的账单</text>
+          </view>
+          <view class="shortcut-item">
+            <view class="shortcut-icon shortcut-icon-blue"></view>
+            <text class="shortcut-text">物业咨询</text>
+          </view>
+          <view class="shortcut-item">
+            <view class="shortcut-icon shortcut-icon-green"></view>
+            <text class="shortcut-text">智能开门</text>
+          </view>
+          <view class="shortcut-item">
+            <view class="shortcut-icon shortcut-icon-purple"></view>
+            <text class="shortcut-text">我的车位</text>
+          </view>
+        </view>
+      </view>
+
+      <!-- 列表入口 -->
+      <view class="card list-card">
+        <view class="list-item">
+          <view class="list-left">
+            <view class="list-icon"></view>
+            <text class="list-text">消息中心</text>
+          </view>
+          <view class="list-right">
+            <text class="badge">3</text>
+          </view>
+        </view>
+        <view class="list-item">
+          <view class="list-left">
+            <view class="list-icon"></view>
+            <text class="list-text">偏好设置</text>
+          </view>
+          <text class="list-arrow">›</text>
+        </view>
+        <view class="list-item">
+          <view class="list-left">
+            <view class="list-icon"></view>
+            <text class="list-text">隐私管理</text>
+          </view>
+          <text class="list-arrow">›</text>
+        </view>
+        <view class="list-item">
+          <view class="list-left list-left-danger">
+            <view class="list-icon list-icon-danger"></view>
+            <text class="list-text list-text-danger">切换账号</text>
+          </view>
+        </view>
+      </view>
+
+      <!-- 适老化入口 -->
+      <view class="senior card">
+        <view class="senior-left">
+          <view class="senior-icon"></view>
+          <view>
+            <text class="senior-title">长辈服务模式</text>
+            <text class="senior-subtitle">更大字体，更简单的界面设计</text>
+          </view>
+        </view>
+        <view class="switch">
+          <view class="switch-thumb"></view>
+        </view>
+      </view>
+    </view>
+  </scroll-view>
+</view>

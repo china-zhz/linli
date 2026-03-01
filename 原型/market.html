@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>闲置交易 - 邻里社区</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="https://code.iconify.design/3/3.1.1/iconify.min.js"></script>
+<style>
+        body { background-color: #F8F8F8; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+        .wechat-container { width: 375px; height: 812px; margin: 20px auto; border: 8px solid #333; border-radius: 40px; position: relative; overflow: hidden; background: #F8F8F8; display: flex; flex-direction: column; }
+        .scroll-area { flex: 1; overflow-y: auto; -ms-overflow-style: none; scrollbar-width: none; }
+        .scroll-area::-webkit-scrollbar { display: none; }
+        .tab-bar { height: 84px; background: white; border-top: 1px solid #EEE; display: flex; justify-content: space-around; padding-top: 10px; padding-bottom: 20px; }
+        .tab-item { display: flex; flex-direction: column; align-items: center; font-size: 10px; color: #999; }
+        .tab-item.active { color: #07C160; }
+        .product-card { background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 2px 4px rgba(0,0,0,0.05); }
+    </style>
+</head>
+<body>
+<div class="wechat-container">
+<!-- 头部 -->
+<div class="pt-12 px-4 pb-4 bg-white">
+<div class="flex justify-between items-center">
+<h1 class="text-xl font-bold">闲置交易</h1>
+<button class="bg-[#07C160] text-white px-4 py-1.5 rounded-full text-xs font-bold flex items-center gap-1">
+<span class="iconify" data-icon="ri:add-line"></span> 发布宝贝
+                </button>
+</div>
+<!-- 分类标签 -->
+<div class="mt-4 flex gap-2 overflow-x-auto no-scrollbar">
+<span class="px-4 py-1.5 bg-[#07C160] text-white rounded-full text-xs whitespace-nowrap">全部</span>
+<span class="px-4 py-1.5 bg-gray-100 text-gray-500 rounded-full text-xs whitespace-nowrap">家具家电</span>
+<span class="px-4 py-1.5 bg-gray-100 text-gray-500 rounded-full text-xs whitespace-nowrap">数码电子</span>
+<span class="px-4 py-1.5 bg-gray-100 text-gray-500 rounded-full text-xs whitespace-nowrap">母婴用品</span>
+<span class="px-4 py-1.5 bg-gray-100 text-gray-500 rounded-full text-xs whitespace-nowrap">图书玩具</span>
+</div>
+</div>
+<div class="scroll-area p-4">
+<div class="grid grid-cols-2 gap-3">
+<!-- 商品 1 -->
+<div class="product-card">
+<img alt="Product" class="w-full h-40 object-cover" src="https://modao.cc/agent-py/media/generated_images/2026-03-01/1f722e481d234179acc979d52982d108.jpg"/>
+<div class="p-3">
+<div class="text-sm font-bold text-gray-800 line-clamp-1">九成新办公人体工学椅</div>
+<div class="mt-2 flex items-baseline gap-1">
+<span class="text-sm text-red-500 font-bold">¥</span>
+<span class="text-lg text-red-500 font-bold">150</span>
+<span class="text-[10px] text-gray-400 line-through ml-1">¥499</span>
+</div>
+<div class="mt-2 flex items-center justify-between">
+<div class="flex items-center gap-1">
+<img alt="User" class="w-4 h-4 rounded-full" src="https://modao.cc/agent-py/media/generated_images/2026-03-01/554a55afc9ca47928f30ef70409246e3.jpg"/>
+<span class="text-[10px] text-gray-400">王大勇</span>
+</div>
+<span class="text-[10px] text-gray-400">2栋</span>
+</div>
+</div>
+</div>
+<!-- 商品 2 -->
+<div class="product-card">
+<img alt="Product" class="w-full h-40 object-cover" src="https://modao.cc/agent-py/media/generated_images/2026-03-01/1f722e481d234179acc979d52982d108.jpg"/>
+<div class="p-3">
+<div class="text-sm font-bold text-gray-800 line-clamp-1">乐高樱花盆栽已拼好</div>
+<div class="mt-2 flex items-baseline gap-1">
+<span class="text-sm text-red-500 font-bold">¥</span>
+<span class="text-lg text-red-500 font-bold">88</span>
+</div>
+<div class="mt-2 flex items-center justify-between">
+<div class="flex items-center gap-1">
+<img alt="User" class="w-4 h-4 rounded-full" src="https://modao.cc/agent-py/media/generated_images/2026-03-01/554a55afc9ca47928f30ef70409246e3.jpg"/>
+<span class="text-[10px] text-gray-400">小林</span>
+</div>
+<span class="text-[10px] text-gray-400">15栋</span>
+</div>
+</div>
+</div>
+<!-- 商品 3 -->
+<div class="product-card">
+<img alt="Product" class="w-full h-40 object-cover" src="https://modao.cc/agent-py/media/generated_images/2026-03-01/1f722e481d234179acc979d52982d108.jpg"/>
+<div class="p-3">
+<div class="text-sm font-bold text-gray-800 line-clamp-1">大容量空气炸锅 5L</div>
+<div class="mt-2 flex items-baseline gap-1">
+<span class="text-sm text-red-500 font-bold">¥</span>
+<span class="text-lg text-red-500 font-bold">120</span>
+</div>
+<div class="mt-2 flex items-center justify-between">
+<div class="flex items-center gap-1">
+<img alt="User" class="w-4 h-4 rounded-full" src="https://modao.cc/agent-py/media/generated_images/2026-03-01/554a55afc9ca47928f30ef70409246e3.jpg"/>
+<span class="text-[10px] text-gray-400">李阿姨</span>
+</div>
+<span class="text-[10px] text-gray-400">5栋</span>
+</div>
+</div>
+</div>
+<!-- 商品 4 -->
+<div class="product-card">
+<img alt="Product" class="w-full h-40 object-cover" src="https://modao.cc/agent-py/media/generated_images/2026-03-01/1f722e481d234179acc979d52982d108.jpg"/>
+<div class="p-3">
+<div class="text-sm font-bold text-gray-800 line-clamp-1">闲置吉他 入门级</div>
+<div class="mt-2 flex items-baseline gap-1">
+<span class="text-sm text-red-500 font-bold">¥</span>
+<span class="text-lg text-red-500 font-bold">200</span>
+</div>
+<div class="mt-2 flex items-center justify-between">
+<div class="flex items-center gap-1">
+<img alt="User" class="w-4 h-4 rounded-full" src="https://modao.cc/agent-py/media/generated_images/2026-03-01/554a55afc9ca47928f30ef70409246e3.jpg"/>
+<span class="text-[10px] text-gray-400">阿强</span>
+</div>
+<span class="text-[10px] text-gray-400">18栋</span>
+</div>
+</div>
+</div>
+<!-- 商品 5 -->
+<div class="product-card">
+<img alt="Product" class="w-full h-40 object-cover" src="https://modao.cc/agent-py/media/generated_images/2026-03-01/1f722e481d234179acc979d52982d108.jpg"/>
+<div class="p-3">
+<div class="text-sm font-bold text-gray-800 line-clamp-1">宝宝扭扭车 三合一</div>
+<div class="mt-2 flex items-baseline gap-1">
+<span class="text-sm text-red-500 font-bold">¥</span>
+<span class="text-lg text-red-500 font-bold">60</span>
+</div>
+<div class="mt-2 flex items-center justify-between">
+<div class="flex items-center gap-1">
+<img alt="User" class="w-4 h-4 rounded-full" src="https://modao.cc/agent-py/media/generated_images/2026-03-01/554a55afc9ca47928f30ef70409246e3.jpg"/>
+<span class="text-[10px] text-gray-400">苏苏</span>
+</div>
+<span class="text-[10px] text-gray-400">7栋</span>
+</div>
+</div>
+</div>
+<!-- 商品 6 -->
+<div class="product-card">
+<img alt="Product" class="w-full h-40 object-cover" src="https://modao.cc/agent-py/media/generated_images/2026-03-01/1f722e481d234179acc979d52982d108.jpg"/>
+<div class="p-3">
+<div class="text-sm font-bold text-gray-800 line-clamp-1">多动肉多肉植物带盆</div>
+<div class="mt-2 flex items-baseline gap-1">
+<span class="text-sm text-red-500 font-bold">¥</span>
+<span class="text-lg text-red-500 font-bold">15</span>
+</div>
+<div class="mt-2 flex items-center justify-between">
+<div class="flex items-center gap-1">
+<img alt="User" class="w-4 h-4 rounded-full" src="https://modao.cc/agent-py/media/generated_images/2026-03-01/554a55afc9ca47928f30ef70409246e3.jpg"/>
+<span class="text-[10px] text-gray-400">晴天</span>
+</div>
+<span class="text-[10px] text-gray-400">3栋</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- 底部导航栏 -->
+<div class="tab-bar">
+<a class="tab-item" href="index.html">
+<span class="iconify text-2xl" data-icon="ri:home-8-line"></span>
+<span>首页</span>
+</a>
+<a class="tab-item" href="qa.html">
+<span class="iconify text-2xl" data-icon="ri:questionnaire-line"></span>
+<span>邻里问问</span>
+</a>
+<a class="tab-item" href="help.html">
+<span class="iconify text-2xl" data-icon="ri:heart-3-line"></span>
+<span>邻里互助</span>
+</a>
+<a class="tab-item active" href="market.html">
+<span class="iconify text-2xl" data-icon="ri:shopping-bag-3-fill"></span>
+<span>闲置交易</span>
+</a>
+<a class="tab-item" href="profile.html">
+<span class="iconify text-2xl" data-icon="ri:user-3-line"></span>
+<span>我的</span>
+</a>
+</div>
+</div>
+</body>
+</html>

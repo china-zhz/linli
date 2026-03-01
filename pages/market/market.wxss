@@ -1,0 +1,163 @@
+.page-market {
+  min-height: 100vh;
+  padding: 24rpx 24rpx 40rpx;
+  box-sizing: border-box;
+}
+
+.scroll {
+  height: 100%;
+}
+
+.header {
+  margin-bottom: 24rpx;
+}
+
+.header-row {
+  flex-direction: row;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-title {
+  font-size: 32rpx;
+  font-weight: 700;
+  color: #333333;
+}
+
+.publish-btn {
+  flex-direction: row;
+  display: flex;
+  align-items: center;
+  padding: 10rpx 24rpx;
+  border-radius: 999rpx;
+  background-color: #07c160;
+}
+
+.publish-icon {
+  font-size: 26rpx;
+  color: #ffffff;
+  margin-right: 8rpx;
+}
+
+.publish-text {
+  font-size: 22rpx;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.tag-row {
+  margin-top: 24rpx;
+  white-space: nowrap;
+}
+
+.tag {
+  display: inline-block;
+  padding: 10rpx 28rpx;
+  border-radius: 999rpx;
+  font-size: 22rpx;
+  color: #666666;
+  background-color: #f5f5f5;
+  margin-right: 16rpx;
+}
+
+.tag-active {
+  background-color: #07c160;
+  color: #ffffff;
+}
+
+.grid {
+  margin-top: 8rpx;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.product {
+  width: 48%;
+  padding: 0;
+  margin-top: 16rpx;
+  overflow: hidden;
+}
+
+.product-image {
+  width: 100%;
+  height: 220rpx;
+  background-color: #d9f7be;
+}
+
+.product-body {
+  padding: 16rpx;
+}
+
+.product-title {
+  font-size: 24rpx;
+  font-weight: 600;
+  color: #333333;
+  max-width: 100%;
+}
+
+.product-price-row {
+  margin-top: 8rpx;
+  flex-direction: row;
+  display: flex;
+  align-items: baseline;
+}
+
+.price-symbol {
+  font-size: 22rpx;
+  color: #f5222d;
+}
+
+.price-main {
+  font-size: 30rpx;
+  font-weight: 700;
+  color: #f5222d;
+  margin-left: 2rpx;
+}
+
+.price-origin {
+  font-size: 20rpx;
+  color: #b7b7b7;
+  text-decoration: line-through;
+  margin-left: 8rpx;
+}
+
+.product-footer {
+  margin-top: 8rpx;
+  flex-direction: row;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.owner {
+  flex-direction: row;
+  display: flex;
+  align-items: center;
+}
+
+.owner-avatar {
+  width: 32rpx;
+  height: 32rpx;
+  border-radius: 16rpx;
+  background-color: #dddddd;
+  margin-right: 8rpx;
+}
+
+.owner-name {
+  font-size: 20rpx;
+  color: #999999;
+}
+
+.owner-building {
+  font-size: 20rpx;
+  color: #bbbbbb;
+}
+
+.card {
+  background-color: #ffffff;
+  border-radius: 24rpx;
+  padding: 24rpx;
+  box-shadow: 0 6rpx 16rpx rgba(0, 0, 0, 0.05);
+}

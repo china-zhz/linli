@@ -1,0 +1,139 @@
+.page-select {
+  background-color: #f8f8f8;
+  min-height: 100vh;
+}
+
+.status-bar {
+  height: 44rpx;
+  padding: 24rpx 60rpx 0 60rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 24rpx;
+  color: #222;
+}
+
+.status-right {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.status-text + .status-text {
+  margin-left: 12rpx;
+}
+
+.content {
+  padding: 40rpx 32rpx 32rpx;
+}
+
+.welcome-title {
+  font-size: 36rpx;
+  font-weight: 700;
+  color: #333333;
+}
+
+.search-box {
+  margin-top: 32rpx;
+}
+
+.search-input {
+  width: 100%;
+  padding: 20rpx 24rpx;
+  border-radius: 24rpx;
+  background-color: #ffffff;
+  box-shadow: 0 4rpx 12rpx rgba(0, 0, 0, 0.04);
+  font-size: 26rpx;
+  box-sizing: border-box;
+}
+
+.search-placeholder {
+  color: #bbbbbb;
+}
+
+.location-card {
+  margin-top: 32rpx;
+}
+
+.location-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.location-left {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.location-icon {
+  font-size: 28rpx;
+  margin-right: 8rpx;
+  color: #07c160;
+}
+
+.location-label {
+  font-size: 24rpx;
+  color: #666666;
+}
+
+.location-retry {
+  font-size: 24rpx;
+  color: #07c160;
+}
+
+.location-text {
+  margin-top: 16rpx;
+  font-size: 30rpx;
+  font-weight: 600;
+  color: #333333;
+}
+
+.community-list {
+  margin-top: 32rpx;
+}
+
+.community-section-title {
+  font-size: 24rpx;
+  color: #999999;
+  margin-left: 8rpx;
+  margin-bottom: 16rpx;
+}
+
+.community-item {
+  margin-top: 16rpx;
+}
+
+.community-main {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.community-name {
+  font-size: 30rpx;
+  font-weight: 600;
+  color: #333333;
+}
+
+.community-desc {
+  margin-top: 8rpx;
+  font-size: 22rpx;
+  color: #999999;
+}
+
+.community-arrow {
+  font-size: 32rpx;
+  color: #cccccc;
+}
+
+.card {
+  background-color: #ffffff;
+  border-radius: 24rpx;
+  padding: 24rpx;
+  box-shadow: 0 6rpx 16rpx rgba(0, 0, 0, 0.05);
+}

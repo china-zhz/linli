@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>邻里互助 - 邻里社区</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="https://code.iconify.design/3/3.1.1/iconify.min.js"></script>
+<style>
+        body { background-color: #F8F8F8; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+        .wechat-container { width: 375px; height: 812px; margin: 20px auto; border: 8px solid #333; border-radius: 40px; position: relative; overflow: hidden; background: #F8F8F8; display: flex; flex-direction: column; }
+        .scroll-area { flex: 1; overflow-y: auto; -ms-overflow-style: none; scrollbar-width: none; }
+        .scroll-area::-webkit-scrollbar { display: none; }
+        .tab-bar { height: 84px; background: white; border-top: 1px solid #EEE; display: flex; justify-content: space-around; padding-top: 10px; padding-bottom: 20px; }
+        .tab-item { display: flex; flex-direction: column; align-items: center; font-size: 10px; color: #999; }
+        .tab-item.active { color: #07C160; }
+        .help-badge { font-size: 10px; border-radius: 4px; padding: 2px 6px; }
+    </style>
+</head>
+<body>
+<div class="wechat-container">
+<!-- 头部 -->
+<div class="pt-12 px-4 pb-4 bg-white border-b">
+<div class="flex justify-between items-center">
+<h1 class="text-xl font-bold">邻里互助</h1>
+<div class="flex items-center gap-1 text-[#07C160]">
+<span class="iconify" data-icon="ri:coin-line"></span>
+<span class="text-sm font-bold">420 积分</span>
+</div>
+</div>
+<div class="mt-4 flex bg-gray-100 p-1 rounded-xl">
+<button class="flex-1 py-1.5 text-sm font-bold bg-white rounded-lg shadow-sm text-[#07C160]">我要求助</button>
+<button class="flex-1 py-1.5 text-sm font-bold text-gray-500">我的任务</button>
+</div>
+</div>
+<div class="scroll-area p-4 space-y-4">
+<!-- 互助卡片 1 -->
+<div class="bg-white rounded-2xl p-4 shadow-sm border-l-4 border-orange-400">
+<div class="flex justify-between items-start">
+<div>
+<span class="help-badge bg-orange-100 text-orange-600">生活紧急</span>
+<h3 class="mt-2 font-bold text-gray-800">下雨了，谁能帮 5号楼302室 收个衣服？</h3>
+</div>
+<div class="text-right">
+<div class="text-[#07C160] font-bold">+20 积分</div>
+<div class="text-[10px] text-gray-400">刚刚发布</div>
+</div>
+</div>
+<div class="mt-3 text-sm text-gray-600">
+                    人不在家，阳台落地窗没关，衣服眼看就要淋湿了，求好心邻居帮个忙！
+                </div>
+<div class="mt-4 flex items-center justify-between">
+<div class="flex items-center gap-2">
+<img alt="User" class="w-6 h-6 rounded-full" src="https://modao.cc/agent-py/media/generated_images/2026-03-01/07abf1c0d1a64390b9965bffb923c445.jpg"/>
+<span class="text-xs text-gray-500">陈女士 · 5号楼</span>
+</div>
+<button class="bg-[#07C160] text-white px-4 py-1.5 rounded-full text-xs font-bold">立即接单</button>
+</div>
+</div>
+<!-- 互助卡片 2 -->
+<div class="bg-white rounded-2xl p-4 shadow-sm border-l-4 border-blue-400">
+<div class="flex justify-between items-start">
+<div>
+<span class="help-badge bg-blue-100 text-blue-600">物力协助</span>
+<h3 class="mt-2 font-bold text-gray-800">家里梯子坏了，谁家能借个梯子用半天？</h3>
+</div>
+<div class="text-right">
+<div class="text-[#07C160] font-bold">+10 积分</div>
+<div class="text-[10px] text-gray-400">20分钟前</div>
+</div>
+</div>
+<div class="mt-3 text-sm text-gray-600">
+                    要换客厅灯泡，手能够不着。用完速还，送上一瓶可乐表示感谢！
+                </div>
+<div class="mt-4 flex items-center justify-between">
+<div class="flex items-center gap-2">
+<img alt="User" class="w-6 h-6 rounded-full" src="https://modao.cc/agent-py/media/generated_images/2026-03-01/07abf1c0d1a64390b9965bffb923c445.jpg"/>
+<span class="text-xs text-gray-500">赵哥 · 12号楼</span>
+</div>
+<button class="bg-[#07C160] text-white px-4 py-1.5 rounded-full text-xs font-bold">联系邻居</button>
+</div>
+</div>
+<!-- 互助卡片 3 -->
+<div class="bg-white rounded-2xl p-4 shadow-sm border-l-4 border-green-400">
+<div class="flex justify-between items-start">
+<div>
+<span class="help-badge bg-green-100 text-green-600">专业咨询</span>
+<h3 class="mt-2 font-bold text-gray-800">求懂电脑的邻居帮忙清理下风扇灰尘</h3>
+</div>
+<div class="text-right">
+<div class="text-[#07C160] font-bold">+50 积分</div>
+<div class="text-[10px] text-gray-400">1小时前</div>
+</div>
+</div>
+<div class="mt-3 text-sm text-gray-600">
+                    笔记本电脑响声特别大，自己不敢拆。只要清理一下就行，重谢！
+                </div>
+<div class="mt-4 flex items-center justify-between">
+<div class="flex items-center gap-2">
+<img alt="User" class="w-6 h-6 rounded-full" src="https://modao.cc/agent-py/media/generated_images/2026-03-01/07abf1c0d1a64390b9965bffb923c445.jpg"/>
+<span class="text-xs text-gray-500">小周 · 8号楼</span>
+</div>
+<button class="bg-[#07C160] text-white px-4 py-1.5 rounded-full text-xs font-bold">提供帮助</button>
+</div>
+</div>
+<!-- 荣誉榜 -->
+<div class="bg-gradient-to-br from-green-50 to-emerald-100 p-4 rounded-2xl">
+<h3 class="font-bold text-green-800 text-sm mb-3 flex items-center gap-1">
+<span class="iconify" data-icon="ri:medal-2-fill"></span>
+                    本周邻里之星
+                </h3>
+<div class="flex gap-4">
+<div class="flex flex-col items-center">
+<img alt="Avatar" class="w-12 h-12 rounded-full border-2 border-white" src="https://modao.cc/agent-py/media/generated_images/2026-03-01/eb8c8ca677ad4476a28fea006a2623f1.jpg"/>
+<span class="text-[10px] font-bold text-gray-600 mt-1">刘大夫</span>
+<span class="text-[9px] text-green-600">接单12次</span>
+</div>
+<div class="flex flex-col items-center">
+<img alt="Avatar" class="w-12 h-12 rounded-full border-2 border-white" src="https://modao.cc/agent-py/media/generated_images/2026-03-01/eb8c8ca677ad4476a28fea006a2623f1.jpg"/>
+<span class="text-[10px] font-bold text-gray-600 mt-1">阿强</span>
+<span class="text-[9px] text-green-600">接单9次</span>
+</div>
+<div class="flex flex-col items-center">
+<img alt="Avatar" class="w-12 h-12 rounded-full border-2 border-white" src="https://modao.cc/agent-py/media/generated_images/2026-03-01/eb8c8ca677ad4476a28fea006a2623f1.jpg"/>
+<span class="text-[10px] font-bold text-gray-600 mt-1">林小姐</span>
+<span class="text-[9px] text-green-600">接单7次</span>
+</div>
+</div>
+</div>
+</div>
+<!-- 底部导航栏 -->
+<div class="tab-bar">
+<a class="tab-item" href="index.html">
+<span class="iconify text-2xl" data-icon="ri:home-8-line"></span>
+<span>首页</span>
+</a>
+<a class="tab-item" href="qa.html">
+<span class="iconify text-2xl" data-icon="ri:questionnaire-line"></span>
+<span>邻里问问</span>
+</a>
+<a class="tab-item active" href="help.html">
+<span class="iconify text-2xl" data-icon="ri:heart-3-fill"></span>
+<span>邻里互助</span>
+</a>
+<a class="tab-item" href="market.html">
+<span class="iconify text-2xl" data-icon="ri:shopping-bag-3-line"></span>
+<span>闲置交易</span>
+</a>
+<a class="tab-item" href="profile.html">
+<span class="iconify text-2xl" data-icon="ri:user-3-line"></span>
+<span>我的</span>
+</a>
+</div>
+</div>
+</body>
+</html>

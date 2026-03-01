@@ -1,0 +1,138 @@
+<view class="page-market">
+  <!-- 头部 -->
+  <view class="header card">
+    <view class="header-row">
+      <text class="header-title">闲置交易</text>
+      <view class="publish-btn">
+        <text class="publish-icon">＋</text>
+        <text class="publish-text">发布宝贝</text>
+      </view>
+    </view>
+    <scroll-view scroll-x="true" class="tag-row" enable-flex="true">
+      <view class="tag tag-active">全部</view>
+      <view class="tag">家具家电</view>
+      <view class="tag">数码电子</view>
+      <view class="tag">母婴用品</view>
+      <view class="tag">图书玩具</view>
+    </scroll-view>
+  </view>
+
+  <scroll-view scroll-y="true" class="scroll">
+    <view class="grid">
+      <!-- 商品 1 -->
+      <view class="product card">
+        <view class="product-image"></view>
+        <view class="product-body">
+          <text class="product-title">九成新办公人体工学椅</text>
+          <view class="product-price-row">
+            <text class="price-symbol">¥</text>
+            <text class="price-main">150</text>
+            <text class="price-origin">¥499</text>
+          </view>
+          <view class="product-footer">
+            <view class="owner">
+              <view class="owner-avatar"></view>
+              <text class="owner-name">王大勇</text>
+            </view>
+            <text class="owner-building">2栋</text>
+          </view>
+        </view>
+      </view>
+
+      <!-- 商品 2 -->
+      <view class="product card">
+        <view class="product-image"></view>
+        <view class="product-body">
+          <text class="product-title">乐高樱花盆栽已拼好</text>
+          <view class="product-price-row">
+            <text class="price-symbol">¥</text>
+            <text class="price-main">88</text>
+          </view>
+          <view class="product-footer">
+            <view class="owner">
+              <view class="owner-avatar"></view>
+              <text class="owner-name">小林</text>
+            </view>
+            <text class="owner-building">15栋</text>
+          </view>
+        </view>
+      </view>
+
+      <!-- 商品 3 -->
+      <view class="product card">
+        <view class="product-image"></view>
+        <view class="product-body">
+          <text class="product-title">大容量空气炸锅 5L</text>
+          <view class="product-price-row">
+            <text class="price-symbol">¥</text>
+            <text class="price-main">120</text>
+          </view>
+          <view class="product-footer">
+            <view class="owner">
+              <view class="owner-avatar"></view>
+              <text class="owner-name">李阿姨</text>
+            </view>
+            <text class="owner-building">5栋</text>
+          </view>
+        </view>
+      </view>
+
+      <!-- 商品 4 -->
+      <view class="product card">
+        <view class="product-image"></view>
+        <view class="product-body">
+          <text class="product-title">闲置吉他 入门级</text>
+          <view class="product-price-row">
+            <text class="price-symbol">¥</text>
+            <text class="price-main">200</text>
+          </view>
+          <view class="product-footer">
+            <view class="owner">
+              <view class="owner-avatar"></view>
+              <text class="owner-name">阿强</text>
+            </view>
+            <text class="owner-building">18栋</text>
+          </view>
+        </view>
+      </view>
+
+      <!-- 商品 5 -->
+      <view class="product card">
+        <view class="product-image"></view>
+        <view class="product-body">
+          <text class="product-title">宝宝扭扭车 三合一</text>
+          <view class="product-price-row">
+            <text class="price-symbol">¥</text>
+            <text class="price-main">60</text>
+          </view>
+          <view class="product-footer">
+            <view class="owner">
+              <view class="owner-avatar"></view>
+              <text class="owner-name">苏苏</text>
+            </view>
+            <text class="owner-building">7栋</text>
+          </view>
+        </view>
+      </view>
+
+      <!-- 商品 6 -->
+      <view class="product card">
+        <view class="product-image"></view>
+        <view class="product-body">
+          <text class="product-title">多肉植物带盆</text>
+          <view class="product-price-row">
+            <text class="price-symbol">¥</text>
+            <text class="price-main">15</text>
+          </view>
+          <view class="product-footer">
+            <view class="owner">
+              <view class="owner-avatar"></view>
+              <text class="owner-name">晴天</text>
+            </view>
+            <text class="owner-building">3栋</text>
+          </view>
+        </view>
+      </view>
+    </view>
+  </scroll-view>
+</view>

@@ -1,0 +1,117 @@
+<view class="page-index">
+  <!-- 顶部小区与标签 -->
+  <view class="header card">
+    <view class="community-row" bindtap="goSelectCommunity">
+      <text class="community-name">{{communityName}}</text>
+      <text class="community-arrow">▾</text>
+    </view>
+    <view class="tab-row">
+      <text class="tab-item tab-item-active">推荐动态</text>
+      <text class="tab-item">社区公告</text>
+      <text class="tab-item">物业服务</text>
+      <text class="tab-item">投票公示</text>
+    </view>
+  </view>
+
+  <scroll-view scroll-y="true" class="scroll">
+    <!-- Banner 区域 -->
+    <view class="banner card">
+      <view class="banner-text">
+        <text class="banner-title">2026年邻里春季运动会</text>
+        <text class="banner-subtitle">报名进行中 · 已有286人参与</text>
+        <view class="banner-button">
+          <text class="banner-button-text">立即报名</text>
+        </view>
+      </view>
+      <view class="banner-image-placeholder">
+        <text class="banner-image-text">活动海报</text>
+      </view>
+    </view>
+
+    <!-- 功能宫格 -->
+    <view class="grid card">
+      <view class="grid-item">
+        <view class="grid-icon grid-icon-blue">修</view>
+        <text class="grid-text">物业报修</text>
+      </view>
+      <view class="grid-item">
+        <view class="grid-icon grid-icon-orange">费</view>
+        <text class="grid-text">生活缴费</text>
+      </view>
+      <view class="grid-item">
+        <view class="grid-icon grid-icon-green">访</view>
+        <text class="grid-text">访客预约</text>
+      </view>
+      <view class="grid-item">
+        <view class="grid-icon grid-icon-purple">诉</view>
+        <text class="grid-text">投诉建议</text>
+      </view>
+    </view>
+
+    <!-- 动态卡片 1 -->
+    <view class="post card">
+      <view class="post-header">
+        <view class="post-avatar"></view>
+        <view class="post-info">
+          <view class="post-name-row">
+            <text class="post-name">王大伟</text>
+            <text class="post-tag">认证业主</text>
+          </view>
+          <text class="post-time">10分钟前</text>
+        </view>
+      </view>
+      <text class="post-content">
+        今天在北门草坪发现一只走丢的小萨姆耶，好乖呀。有丢狗的邻居吗？我暂时安顿在物业中心。#失物招领
+      </text>
+      <view class="post-images">
+        <view class="post-image"></view>
+        <view class="post-image"></view>
+      </view>
+      <view class="post-actions">
+        <view class="post-action">
+          <text class="post-action-icon">👍</text>
+          <text class="post-action-text">24</text>
+        </view>
+        <view class="post-action">
+          <text class="post-action-icon">💬</text>
+          <text class="post-action-text">12</text>
+        </view>
+        <view class="post-action">
+          <text class="post-action-icon">↗</text>
+          <text class="post-action-text">分享</text>
+        </view>
+      </view>
+    </view>
+
+    <!-- 动态卡片 2 -->
+    <view class="post card">
+      <view class="post-header">
+        <view class="post-avatar"></view>
+        <view class="post-info">
+          <view class="post-name-row">
+            <text class="post-name">李阿姨</text>
+          </view>
+          <text class="post-time">1小时前</text>
+        </view>
+      </view>
+      <text class="post-content post-content-link">
+        #邻里问问 请问大家，小区附近哪家推拿馆比较正宗？腰椎间盘突出有点老毛病犯了。
+      </text>
+      <view class="post-actions">
+        <view class="post-action">
+          <text class="post-action-icon">👍</text>
+          <text class="post-action-text">8</text>
+        </view>
+        <view class="post-action">
+          <text class="post-action-icon">💬</text>
+          <text class="post-action-text">3</text>
+        </view>
+      </view>
+    </view>
+  </scroll-view>
+
+  <!-- AI 悬浮按钮 -->
+  <view class="ai-fab">
+    <text class="ai-fab-icon">🤖</text>
+  </view>
+</view>

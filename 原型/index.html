@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>邻里广场 - 首页</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="https://code.iconify.design/3/3.1.1/iconify.min.js"></script>
+<style>
+        body { background-color: #F8F8F8; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+        .wechat-container { width: 375px; height: 812px; margin: 20px auto; border: 8px solid #333; border-radius: 40px; position: relative; overflow: hidden; background: #F8F8F8; display: flex; flex-direction: column; }
+        .scroll-area { flex: 1; overflow-y: auto; -ms-overflow-style: none; scrollbar-width: none; }
+        .scroll-area::-webkit-scrollbar { display: none; }
+        .tab-bar { height: 84px; background: white; border-top: 1px solid #EEE; display: flex; justify-content: space-around; padding-top: 10px; padding-bottom: 20px; }
+        .tab-item { display: flex; flex-direction: column; align-items: center; font-size: 10px; color: #999; }
+        .tab-item.active { color: #07C160; }
+        .ai-fab { position: absolute; bottom: 100px; right: 20px; width: 56px; height: 56px; background: linear-gradient(135deg, #07C160, #10AD7A); border-radius: 28px; display: flex; align-items: center; justify-content: center; color: white; box-shadow: 0 4px 12px rgba(7,193,96,0.3); }
+    </style>
+</head>
+<body>
+<div class="wechat-container">
+<!-- 头部导航 -->
+<div class="pt-12 px-4 pb-2 bg-white">
+<a class="flex items-center gap-1 font-bold text-lg" href="select_community.html">
+                碧桂园清华园
+                <span class="iconify" data-icon="ri:arrow-down-s-fill"></span>
+</a>
+<div class="mt-4 flex gap-4 overflow-x-auto whitespace-nowrap pb-2 text-sm no-scrollbar">
+<span class="text-[#07C160] font-bold border-b-2 border-[#07C160] pb-1">推荐动态</span>
+<span class="text-gray-500">社区公告</span>
+<span class="text-gray-500">物业服务</span>
+<span class="text-gray-500">投票公示</span>
+</div>
+</div>
+<div class="scroll-area p-4 space-y-4">
+<!-- 轮播 Banner 占位 -->
+<div class="w-full h-32 bg-gradient-to-r from-green-100 to-blue-100 rounded-2xl flex items-center justify-between p-6 overflow-hidden relative">
+<div>
+<div class="text-[#07C160] font-bold">2026年邻里春季运动会</div>
+<div class="text-[10px] text-gray-500 mt-1">报名进行中 · 已有286人参与</div>
+<button class="mt-2 bg-[#07C160] text-white text-[10px] px-3 py-1 rounded-full text-xs">立即报名</button>
+</div>
+<img alt="Sports Event" class="w-20 h-20 opacity-80" src="https://modao.cc/agent-py/media/generated_images/2026-03-01/11cb5d7835bb44c98bdb3910b54104e6.jpg"/>
+</div>
+<!-- 金刚区 -->
+<div class="grid grid-cols-4 gap-4 bg-white p-4 rounded-2xl shadow-sm">
+<div class="flex flex-col items-center gap-1">
+<div class="w-10 h-10 bg-blue-50 text-blue-500 rounded-full flex items-center justify-center">
+<span class="iconify text-xl" data-icon="ri:tools-fill"></span>
+</div>
+<span class="text-[11px]">物业报修</span>
+</div>
+<div class="flex flex-col items-center gap-1">
+<div class="w-10 h-10 bg-orange-50 text-orange-500 rounded-full flex items-center justify-center">
+<span class="iconify text-xl" data-icon="ri:wallet-3-fill"></span>
+</div>
+<span class="text-[11px]">生活缴费</span>
+</div>
+<div class="flex flex-col items-center gap-1">
+<div class="w-10 h-10 bg-green-50 text-green-500 rounded-full flex items-center justify-center">
+<span class="iconify text-xl" data-icon="ri:shield-user-fill"></span>
+</div>
+<span class="text-[11px]">访客预约</span>
+</div>
+<div class="flex flex-col items-center gap-1">
+<div class="w-10 h-10 bg-purple-50 text-purple-500 rounded-full flex items-center justify-center">
+<span class="iconify text-xl" data-icon="ri:megaphone-fill"></span>
+</div>
+<span class="text-[11px]">投诉建议</span>
+</div>
+</div>
+<!-- 动态卡片 1 -->
+<div class="bg-white rounded-2xl overflow-hidden shadow-sm">
+<div class="p-4 flex gap-3">
+<img alt="User avatar" class="w-10 h-10 rounded-full object-cover" src="https://modao.cc/agent-py/media/generated_images/2026-03-01/95292e67abfe43f18a92b1f3d5e6f3ef.jpg"/>
+<div class="flex-1">
+<div class="flex justify-between">
+<span class="font-bold text-sm">王大伟 <span class="ml-1 px-1.5 py-0.5 bg-green-100 text-[#07C160] text-[8px] rounded">认证业主</span></span>
+<span class="text-[10px] text-gray-400">10分钟前</span>
+</div>
+<p class="text-sm text-gray-700 mt-2">今天在北门草坪发现一只走丢的小萨姆耶，好乖呀。有丢狗的邻居吗？我暂时安顿在物业中心。#失物招领</p>
+<div class="grid grid-cols-2 gap-2 mt-3">
+<img alt="Lost dog photo" class="w-full h-24 rounded-lg object-cover" src="https://modao.cc/agent-py/media/generated_images/2026-03-01/9c54c308f40a4813a1830e698e758916.jpg"/>
+<img alt="Lost dog photo 2" class="w-full h-24 rounded-lg object-cover" src="https://modao.cc/agent-py/media/generated_images/2026-03-01/ee55dc775da44444a70d1faef7781eee.jpg"/>
+</div>
+<div class="flex gap-6 mt-4 text-gray-400">
+<div class="flex items-center gap-1"><span class="iconify text-lg" data-icon="ri:thumb-up-line"></span><span class="text-xs">24</span></div>
+<div class="flex items-center gap-1"><span class="iconify text-lg" data-icon="ri:chat-3-line"></span><span class="text-xs">12</span></div>
+<div class="flex items-center gap-1"><span class="iconify text-lg" data-icon="ri:share-forward-line"></span><span class="text-xs">分享</span></div>
+</div>
+</div>
+</div>
+</div>
+<!-- 动态卡片 2 -->
+<div class="bg-white rounded-2xl overflow-hidden shadow-sm">
+<div class="p-4 flex gap-3">
+<img alt="User avatar" class="w-10 h-10 rounded-full object-cover" src="https://modao.cc/agent-py/media/generated_images/2026-03-01/95292e67abfe43f18a92b1f3d5e6f3ef.jpg"/>
+<div class="flex-1">
+<div class="flex justify-between">
+<span class="font-bold text-sm">李阿姨</span>
+<span class="text-[10px] text-gray-400">1小时前</span>
+</div>
+<p class="text-sm text-gray-700 mt-2 text-blue-500">#邻里问问 请问大家，小区附近哪家推拿馆比较正宗？腰椎间盘突出有点老毛病犯了。</p>
+<div class="flex gap-6 mt-4 text-gray-400">
+<div class="flex items-center gap-1"><span class="iconify text-lg" data-icon="ri:thumb-up-line"></span><span class="text-xs">8</span></div>
+<div class="flex items-center gap-1"><span class="iconify text-lg" data-icon="ri:chat-3-line"></span><span class="text-xs">3</span></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- AI 悬浮球 -->
+<div class="ai-fab">
+<span class="iconify text-2xl" data-icon="ri:robot-3-fill"></span>
+</div>
+<!-- 底部导航栏 -->
+<div class="tab-bar">
+<a class="tab-item active" href="index.html">
+<span class="iconify text-2xl" data-icon="ri:home-8-fill"></span>
+<span>首页</span>
+</a>
+<a class="tab-item" href="qa.html">
+<span class="iconify text-2xl" data-icon="ri:questionnaire-line"></span>
+<span>邻里问问</span>
+</a>
+<a class="tab-item" href="help.html">
+<span class="iconify text-2xl" data-icon="ri:heart-3-line"></span>
+<span>邻里互助</span>
+</a>
+<a class="tab-item" href="market.html">
+<span class="iconify text-2xl" data-icon="ri:shopping-bag-3-line"></span>
+<span>闲置交易</span>
+</a>
+<a class="tab-item" href="profile.html">
+<span class="iconify text-2xl" data-icon="ri:user-3-line"></span>
+<span>我的</span>
+</a>
+</div>
+</div>
+</body>
+</html>

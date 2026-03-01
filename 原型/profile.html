@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>个人中心 - 邻里社区</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="https://code.iconify.design/3/3.1.1/iconify.min.js"></script>
+<style>
+        body { background-color: #F8F8F8; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+        .wechat-container { width: 375px; height: 812px; margin: 20px auto; border: 8px solid #333; border-radius: 40px; position: relative; overflow: hidden; background: #F8F8F8; display: flex; flex-direction: column; }
+        .scroll-area { flex: 1; overflow-y: auto; -ms-overflow-style: none; scrollbar-width: none; }
+        .scroll-area::-webkit-scrollbar { display: none; }
+        .tab-bar { height: 84px; background: white; border-top: 1px solid #EEE; display: flex; justify-content: space-around; padding-top: 10px; padding-bottom: 20px; }
+        .tab-item { display: flex; flex-direction: column; align-items: center; font-size: 10px; color: #999; }
+        .tab-item.active { color: #07C160; }
+        .user-header { background: linear-gradient(to bottom, #E8F5E9 0%, #F8F8F8 100%); padding: 64px 24px 24px; }
+    </style>
+</head>
+<body>
+<div class="wechat-container">
+<div class="scroll-area">
+<!-- 个人头部 -->
+<div class="user-header">
+<div class="flex items-center gap-4">
+<img alt="Avatar" class="w-16 h-16 rounded-full border-4 border-white shadow-sm" src="https://modao.cc/agent-py/media/generated_images/2026-03-01/d6762cdafe9c46afa82970af2f502490.jpg"/>
+<div>
+<div class="flex items-center gap-2">
+<h2 class="text-xl font-bold text-gray-800">王大卫</h2>
+<span class="iconify text-[#07C160]" data-icon="ri:verified-badge-fill"></span>
+</div>
+<div class="mt-1 flex gap-2">
+<span class="text-[10px] px-2 py-0.5 bg-white rounded-full border text-gray-500">碧桂园清华园 · 5号楼</span>
+<span class="text-[10px] px-2 py-0.5 bg-green-500 text-white rounded-full">荣誉业主</span>
+</div>
+</div>
+</div>
+<!-- 资产简报 -->
+<div class="mt-6 grid grid-cols-3 gap-4">
+<div class="text-center">
+<div class="text-lg font-bold text-gray-800">420</div>
+<div class="text-[10px] text-gray-400">互助积分</div>
+</div>
+<div class="text-center">
+<div class="text-lg font-bold text-gray-800">12</div>
+<div class="text-[10px] text-gray-400">我的发布</div>
+</div>
+<div class="text-center">
+<div class="text-lg font-bold text-gray-800">5</div>
+<div class="text-[10px] text-gray-400">邻里勋章</div>
+</div>
+</div>
+</div>
+<!-- 服务入口 -->
+<div class="px-4 space-y-4 -mt-2">
+<div class="bg-white rounded-2xl p-4 shadow-sm">
+<h3 class="text-sm font-bold mb-4">我的社区</h3>
+<div class="grid grid-cols-4 gap-4">
+<div class="flex flex-col items-center gap-2">
+<span class="iconify text-2xl text-orange-400" data-icon="ri:file-list-3-line"></span>
+<span class="text-[11px]">我的账单</span>
+</div>
+<div class="flex flex-col items-center gap-2">
+<span class="iconify text-2xl text-blue-400" data-icon="ri:customer-service-2-line"></span>
+<span class="text-[11px]">物业咨询</span>
+</div>
+<div class="flex flex-col items-center gap-2">
+<span class="iconify text-2xl text-green-400" data-icon="ri:key-2-line"></span>
+<span class="text-[11px]">智能开门</span>
+</div>
+<div class="flex flex-col items-center gap-2">
+<span class="iconify text-2xl text-purple-400" data-icon="ri:car-line"></span>
+<span class="text-[11px]">我的车位</span>
+</div>
+</div>
+</div>
+<div class="bg-white rounded-2xl overflow-hidden shadow-sm">
+<div class="p-4 border-b flex justify-between items-center">
+<div class="flex items-center gap-3">
+<span class="iconify text-gray-400" data-icon="ri:notification-3-line"></span>
+<span class="text-sm">消息中心</span>
+</div>
+<span class="bg-red-500 text-white text-[10px] px-1.5 rounded-full">3</span>
+</div>
+<div class="p-4 border-b flex justify-between items-center">
+<div class="flex items-center gap-3">
+<span class="iconify text-gray-400" data-icon="ri:settings-4-line"></span>
+<span class="text-sm">偏好设置</span>
+</div>
+<span class="iconify text-gray-300" data-icon="ri:arrow-right-s-line"></span>
+</div>
+<div class="p-4 border-b flex justify-between items-center">
+<div class="flex items-center gap-3">
+<span class="iconify text-gray-400" data-icon="ri:shield-check-line"></span>
+<span class="text-sm">隐私管理</span>
+</div>
+<span class="iconify text-gray-300" data-icon="ri:arrow-right-s-line"></span>
+</div>
+<div class="p-4 flex justify-between items-center">
+<div class="flex items-center gap-3 text-red-500">
+<span class="iconify" data-icon="ri:logout-box-r-line"></span>
+<span class="text-sm">切换账号</span>
+</div>
+</div>
+</div>
+<!-- 适老化入口 -->
+<div class="bg-orange-50 p-4 rounded-2xl flex items-center justify-between border border-orange-100">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 bg-orange-200 rounded-full flex items-center justify-center">
+<span class="iconify text-orange-600 text-xl" data-icon="ri:user-smile-line"></span>
+</div>
+<div>
+<div class="text-sm font-bold text-orange-800">长辈服务模式</div>
+<div class="text-[10px] text-orange-600">更大字体，更简单的界面设计</div>
+</div>
+</div>
+<div class="w-10 h-6 bg-gray-300 rounded-full relative">
+<div class="absolute left-1 top-1 w-4 h-4 bg-white rounded-full"></div>
+</div>
+</div>
+</div>
+</div>
+<!-- 底部导航栏 -->
+<div class="tab-bar">
+<a class="tab-item" href="index.html">
+<span class="iconify text-2xl" data-icon="ri:home-8-line"></span>
+<span>首页</span>
+</a>
+<a class="tab-item" href="qa.html">
+<span class="iconify text-2xl" data-icon="ri:questionnaire-line"></span>
+<span>邻里问问</span>
+</a>
+<a class="tab-item" href="help.html">
+<span class="iconify text-2xl" data-icon="ri:heart-3-line"></span>
+<span>邻里互助</span>
+</a>
+<a class="tab-item" href="market.html">
+<span class="iconify text-2xl" data-icon="ri:shopping-bag-3-line"></span>
+<span>闲置交易</span>
+</a>
+<a class="tab-item active" href="profile.html">
+<span class="iconify text-2xl" data-icon="ri:user-3-fill"></span>
+<span>我的</span>
+</a>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,47 @@
+{
+  "pages": [
+    "pages/select-community/select-community",
+    "pages/index/index",
+    "pages/qa/qa",
+    "pages/help/help",
+    "pages/market/market",
+    "pages/profile/profile"
+  ],
+  "window": {
+    "navigationBarTitleText": "邻里社区",
+    "navigationBarBackgroundColor": "#ffffff",
+    "navigationBarTextStyle": "black",
+    "backgroundColor": "#F8F8F8",
+    "backgroundTextStyle": "dark"
+  },
+  "tabBar": {
+    "color": "#999999",
+    "selectedColor": "#07C160",
+    "backgroundColor": "#ffffff",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/qa/qa",
+        "text": "邻里问问"
+      },
+      {
+        "pagePath": "pages/help/help",
+        "text": "邻里互助"
+      },
+      {
+        "pagePath": "pages/market/market",
+        "text": "闲置交易"
+      },
+      {
+        "pagePath": "pages/profile/profile",
+        "text": "我的"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

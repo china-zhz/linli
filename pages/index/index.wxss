@@ -1,0 +1,280 @@
+.page-index {
+  position: relative;
+  min-height: 100vh;
+  padding: 24rpx 24rpx 120rpx;
+  box-sizing: border-box;
+}
+
+.scroll {
+  height: 100%;
+}
+
+.header {
+  margin-bottom: 24rpx;
+}
+
+.community-row {
+  flex-direction: row;
+  display: flex;
+  align-items: center;
+}
+
+.community-name {
+  font-size: 32rpx;
+  font-weight: 700;
+  color: #333333;
+}
+
+.community-arrow {
+  margin-left: 8rpx;
+  font-size: 28rpx;
+  color: #666666;
+}
+
+.tab-row {
+  margin-top: 24rpx;
+  flex-direction: row;
+  display: flex;
+  align-items: center;
+}
+
+.tab-item {
+  font-size: 24rpx;
+  color: #888888;
+  margin-right: 32rpx;
+  padding-bottom: 8rpx;
+}
+
+.tab-item-active {
+  color: #07c160;
+  border-bottom-width: 4rpx;
+  border-bottom-style: solid;
+  border-bottom-color: #07c160;
+  font-weight: 600;
+}
+
+.banner {
+  flex-direction: row;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-image: linear-gradient(90deg, #e6f7ef, #e6f0ff);
+}
+
+.banner-text {
+  flex: 1;
+}
+
+.banner-title {
+  font-size: 28rpx;
+  font-weight: 700;
+  color: #07c160;
+}
+
+.banner-subtitle {
+  margin-top: 8rpx;
+  font-size: 22rpx;
+  color: #666666;
+}
+
+.banner-button {
+  margin-top: 16rpx;
+  background-color: #07c160;
+  padding: 8rpx 24rpx;
+  border-radius: 999rpx;
+  display: inline-flex;
+}
+
+.banner-button-text {
+  font-size: 22rpx;
+  color: #ffffff;
+}
+
+.banner-image-placeholder {
+  width: 140rpx;
+  height: 140rpx;
+  border-radius: 70rpx;
+  background-color: rgba(255, 255, 255, 0.7);
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.banner-image-text {
+  font-size: 22rpx;
+  color: #666666;
+}
+
+.grid {
+  margin-top: 24rpx;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-row-gap: 24rpx;
+}
+
+.grid-item {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.grid-icon {
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 40rpx;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  font-size: 32rpx;
+  font-weight: 600;
+}
+
+.grid-icon-blue {
+  background-color: #e6f0ff;
+  color: #2f54eb;
+}
+
+.grid-icon-orange {
+  background-color: #fff7e6;
+  color: #fa8c16;
+}
+
+.grid-icon-green {
+  background-color: #e6fffb;
+  color: #13c2c2;
+}
+
+.grid-icon-purple {
+  background-color: #f9f0ff;
+  color: #722ed1;
+}
+
+.grid-text {
+  margin-top: 8rpx;
+  font-size: 22rpx;
+  color: #555555;
+}
+
+.post {
+  margin-top: 24rpx;
+}
+
+.post-header {
+  flex-direction: row;
+  display: flex;
+  align-items: center;
+}
+
+.post-avatar {
+  width: 72rpx;
+  height: 72rpx;
+  border-radius: 36rpx;
+  background-color: #dddddd;
+  margin-right: 16rpx;
+}
+
+.post-info {
+  flex: 1;
+}
+
+.post-name-row {
+  flex-direction: row;
+  display: flex;
+  align-items: center;
+}
+
+.post-name {
+  font-size: 26rpx;
+  font-weight: 600;
+  color: #333333;
+}
+
+.post-tag {
+  margin-left: 12rpx;
+  font-size: 20rpx;
+  padding: 4rpx 12rpx;
+  border-radius: 999rpx;
+  background-color: #e6fffb;
+  color: #07c160;
+}
+
+.post-time {
+  margin-top: 4rpx;
+  font-size: 20rpx;
+  color: #aaaaaa;
+}
+
+.post-content {
+  margin-top: 16rpx;
+  font-size: 24rpx;
+  color: #555555;
+  line-height: 1.6;
+}
+
+.post-content-link {
+  color: #1677ff;
+}
+
+.post-images {
+  margin-top: 16rpx;
+  flex-direction: row;
+  display: flex;
+  justify-content: space-between;
+}
+
+.post-image {
+  width: 48%;
+  height: 160rpx;
+  border-radius: 16rpx;
+  background-color: #e5e5e5;
+}
+
+.post-actions {
+  margin-top: 20rpx;
+  flex-direction: row;
+  display: flex;
+  align-items: center;
+}
+
+.post-action {
+  flex-direction: row;
+  display: flex;
+  align-items: center;
+  margin-right: 40rpx;
+}
+
+.post-action-icon {
+  font-size: 28rpx;
+}
+
+.post-action-text {
+  margin-left: 8rpx;
+  font-size: 22rpx;
+  color: #888888;
+}
+
+.ai-fab {
+  position: fixed;
+  right: 40rpx;
+  bottom: 160rpx;
+  width: 112rpx;
+  height: 112rpx;
+  border-radius: 56rpx;
+  background-image: linear-gradient(135deg, #07c160, #10ad7a);
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  box-shadow: 0 16rpx 32rpx rgba(7, 193, 96, 0.3);
+}
+
+.ai-fab-icon {
+  font-size: 40rpx;
+  color: #ffffff;
+}
+
+.card {
+  background-color: #ffffff;
+  border-radius: 24rpx;
+  padding: 24rpx;
+  box-shadow: 0 6rpx 16rpx rgba(0, 0, 0, 0.05);
+}
